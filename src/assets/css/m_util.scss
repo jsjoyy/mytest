@@ -1,0 +1,350 @@
+/**mUtil.css[约定]**/
+
+/*弹性盒子*/
+
+/*align-content多行延纵轴对齐*/
+/*align-items单行纵轴对齐*/
+/*justify-content多列横轴对齐*/
+/*justify-items单列横轴对齐*/
+
+.acea-row {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  /* 辅助类 */
+}
+.acea-row.row-middle {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.acea-row.row-top {
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  -o-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+}
+.acea-row.row-bottom {
+  -webkit-box-align: end;
+  -moz-box-align: end;
+  -o-box-align: end;
+  -ms-flex-align: end;
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
+}
+.acea-row.row-basline {
+  -webkit-box-align: end;
+  -moz-box-align: end;
+  -o-box-align: end;
+  -ms-flex-align: end;
+  -webkit-align-items: flex-end;
+  align-items: baseline;
+}
+.acea-row.row-center {
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.acea-row.row-right {
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  -o-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+}
+.acea-row.row-left {
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  -o-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+.acea-row.row-between {
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+.acea-row.row-around {
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
+}
+.acea-row.row-column-around {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
+}
+.acea-row.row-column {
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.acea-row.row-column-between {
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+/* 上下左右垂直居中 */
+.acea-row.row-center-wrapper {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+/* 上下两边居中对齐 */
+.acea-row.row-between-wrapper {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+/*align-content多行延纵轴对齐*/
+.acea-row.rows-middle {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-content: center;
+}
+.acea-row.rows-top {
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  -o-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  align-content: flex-start;
+}
+.acea-row.rows-bottom {
+  -webkit-box-align: end;
+  -moz-box-align: end;
+  -o-box-align: end;
+  -ms-flex-align: end;
+  -webkit-align-items: flex-end;
+  align-content: flex-end;
+}
+
+/*flex:*/
+.flex_1{
+  flex: 1.0;
+}
+.flex_2{
+  flex: 2.0;
+}
+.flex_3{
+  flex: 3.0;
+}
+/******************************/
+/*grid网格布局*/
+.grid{
+  display: grid;
+  grid-template-areas: 'a b c' 'd e f' 'g h i';
+}
+
+/*字体*/
+/*font-size*/
+.fs12{
+  font-size: 12px;
+}
+.fs14{
+  font-size: 14px;
+}
+.fs16{
+  font-size: 16px;
+}
+.fs18{
+  font-size: 18px;
+}
+.fs20{
+  font-size: 20px;
+}
+.fs24{
+  font-size: 24px;
+}
+/*font-weight*/
+.fw400{
+  font-weight: 400;
+}
+.fw500{
+  font-weight: bold;
+}
+.fw600{
+  font-weight: 600;
+}
+/*color*/
+rootColor {
+
+}
+/*rgb转hex*/
+/*color*/
+.c_000000{
+  color: $c_000000;
+}
+.c_black{
+  color: $c_black;
+}
+.c_000{
+  color: $c_000
+}
+.c_000_5{
+  color: $c_000_5;
+}
+/*background-color*/
+.bc_000000{
+  background-color: $c_000000;
+}
+.bc_black{
+  background-color: $c_black;
+}
+.bc_000{
+  background-color: $c_000;
+}
+.bc_000_5{
+  background-color: $c_000_5;
+}
+/*border-color*/
+.bdc_eee{
+  background-color: $c_eee;
+}
+/*border*/
+.border_xx {
+  border: 1px solid #EEEEEE;
+}
+.border-b{
+  border-bottom: 1px solid #EEEEEE;
+}
+.border-r_p50{
+  border-radius: 50%;
+}
+/*margin*/
+.m_xx{
+  margin: 16px;
+}
+.mt16{
+  margin-top: 16px;
+}
+.ml16{
+  margin-left: 16px;
+}
+.mb16{
+  margin-bottom: 16px;
+}
+.mr16{
+  margin-right: 16px;
+}
+/*padding*/
+.p_xx{
+  padding: 10px;
+}
+.pt10{
+  padding-top: 10px;
+}
+.pl10{
+  padding-left: 10px;
+}
+.pr10{
+  padding-right: 10px;
+}
+.pb10{
+  padding-bottom: 10px;
+}
+/*2行 超出显示省略号 */
+.multi-line {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.multi-line-3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.text-line {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+/*text-align*/
+.t-a_r{
+  text-align: right;
+}
+.t-a_l{
+  text-align: left;
+}
+.t-a_c{
+  text-align: center;
+}
+.t-a_s{
+  text-align: start;
+}
+.t-a_e{
+  text-align: end;
+}
+
+/*function.css*/
+.empty {
+  flex: 1;
+}
+.line{
+  border-bottom: 1px solid #dddddd;
+}
+
+
